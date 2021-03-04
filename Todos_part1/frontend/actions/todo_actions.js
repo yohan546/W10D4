@@ -12,4 +12,14 @@ export const receiveTodo = todo => ({
   todo,
 });
 
+export const removeTodo = todo => ({
+    type: REMOVE_TODO,
+    todo,
+  });
+  
+  export const todoError = error => ({
+    type: TODO_ERROR,
+    error,
+  });
+
 
