@@ -16,8 +16,4 @@ export const removeTodo = todo => ({
     type: REMOVE_TODO,
     todo,
   });
-  
-
-  });
-
 
