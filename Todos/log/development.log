@@ -35,3 +35,71 @@ Migrating to CreateTodo (20210308213401)
   ↳ bin/rails:9
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+Started GET "/" for ::1 at 2021-03-08 17:15:53 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/yohanoh/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Started GET "/" for ::1 at 2021-03-08 17:15:57 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15313ms (Views: 15242.3ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 11678ms (Views: 11613.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/todos" for ::1 at 2021-03-08 17:18:35 -0500
+Processing by Api::TodosController#index as JSON
+Completed 500 Internal Server Error in 195ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - undefined local variable or method `current_user' for #<Api::TodosController:0x00007fecbd458538>:
+  app/controllers/api/todos_controller.rb:4:in `index'
+
+Started GET "/api/todos" for ::1 at 2021-03-08 17:22:43 -0500
+Processing by Api::TodosController#index as JSON
+Completed 500 Internal Server Error in 199ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - undefined local variable or method `current_user' for #<Api::TodosController:0x00007fecc02ecf20>:
+  app/controllers/api/todos_controller.rb:4:in `index'
+
+Started GET "/api/todos" for ::1 at 2021-03-08 17:23:57 -0500
+Processing by Api::TodosController#index as JSON
+Completed 500 Internal Server Error in 174ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - undefined local variable or method `current_user' for #<Api::TodosController:0x00007fecbe9decb8>:
+  app/controllers/api/todos_controller.rb:4:in `index'
+
+Started GET "/" for ::1 at 2021-03-08 17:25:28 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/yohanoh/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+
+ActionController::RoutingError - uninitialized constant ApplicationController:
+
+Started POST "/__better_errors/4f4936c23cbafbeb/variables" for ::1 at 2021-03-08 17:25:28 -0500
+Started POST "/__better_errors/4f4936c23cbafbeb/variables" for ::1 at 2021-03-08 17:25:35 -0500
+Started GET "/" for ::1 at 2021-03-08 17:27:32 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/yohanoh/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+
+ActionController::RoutingError - uninitialized constant ApplicationController:
+
+Started POST "/__better_errors/6f3c6cb2c32b094c/variables" for ::1 at 2021-03-08 17:27:32 -0500
+Started GET "/" for ::1 at 2021-03-08 17:27:36 -0500
+
+ActionController::RoutingError - uninitialized constant ApplicationController:
+
+Started POST "/__better_errors/adc8553b3471a7db/variables" for ::1 at 2021-03-08 17:27:36 -0500
+Started GET "/" for ::1 at 2021-03-08 17:27:42 -0500
+
+ActionController::RoutingError - uninitialized constant ApplicationController:
+
+Started POST "/__better_errors/cc62f0b15e4f8da4/variables" for ::1 at 2021-03-08 17:27:42 -0500
